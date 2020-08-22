@@ -9,8 +9,13 @@
         Title="Конвертер" Height="300" Width="400">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="28,20,0,0" Text="Что делаем: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Candara" FontSize="16"/>
-        <RadioButton Content="В рубли" HorizontalAlignment="Left" Margin="121,23,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="В шавухи" HorizontalAlignment="Left" Margin="188,23,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="how_text" HorizontalAlignment="Left" Margin="28,71,0,0" Text="Кол-во рублей" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Candara" FontSize="16"/>
+        <TextBlock x:Name="money_text" HorizontalAlignment="Left" Margin="28,128,0,0" Text="Стоимость шаурмы" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Candara" FontSize="16"/>
+        <RadioButton x:Name="to_rub" Content="В рубли" IsChecked="True" HorizontalAlignment="Left" Margin="121,23,0,0" VerticalAlignment="Top" Checked="to_rub_Checked"/>
+        <RadioButton x:Name="to_shav" Content="В шавухи" HorizontalAlignment="Left" Margin="188,23,0,0" VerticalAlignment="Top" Checked="to_shav_Checked"/>
+        <TextBox HorizontalAlignment="Left" Margin="145,71,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="171,128,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Узнать" HorizontalAlignment="Left" Margin="150,228,0,0" VerticalAlignment="Top" Height="30" Width="90"/>
 
     </Grid>
 </Window>

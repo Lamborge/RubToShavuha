@@ -24,5 +24,15 @@ namespace shavuha
         {
             InitializeComponent();
         }
+
+        private void to_shav_Checked(object sender, RoutedEventArgs e)
+        {
+            how_text.Text = "Кол-во рублей";
+        }
+
+        private void to_rub_Checked(object sender, RoutedEventArgs e)
+        {
+            how_text.Text = "Кол-во шавух";
+        }
     }
 }

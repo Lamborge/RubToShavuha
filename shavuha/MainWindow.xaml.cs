@@ -37,13 +37,31 @@ namespace shavuha
 
         private void final_button_Click(object sender, RoutedEventArgs e)
         {
-            if(to_rub.IsChecked == true)
+
+            float money_int;
+            float how_int;
+
+            if (to_rub.IsChecked == true)
             {
-                MessageBox.Show(Convert.ToString(Convert.ToInt32(how_box.Text) * Convert.ToInt32(money_box.Text)));
+                if(float.TryParse(how_box.Text, out how_int) && float.TryParse(money_box.Text, out money_int))
+                {
+                    MessageBox.Show(Convert.ToString(how_int * money_int) + " рублей");
+                }
+                else
+                {
+                    MessageBox.Show("Неккоректный ввод");
+                }
             }
             else if(to_shav.IsChecked == true)
             {
-
+                if (float.TryParse(how_box.Text, out how_int) && float.TryParse(money_box.Text, out money_int))
+                {
+                    MessageBox.Show(Convert.ToString( how_int / money_int ) + " шавух");
+                }
+                else
+                {
+                    MessageBox.Show("Неккоректный ввод");
+                }
             }
         }
     }

@@ -8,6 +8,7 @@
         ResizeMode="NoResize"
         Title="Конвертер" Height="300" Width="400">
     <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

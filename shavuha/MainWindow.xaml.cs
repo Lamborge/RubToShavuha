@@ -34,5 +34,17 @@ namespace shavuha
         {
             how_text.Text = "Кол-во шавух";
         }
+
+        private void final_button_Click(object sender, RoutedEventArgs e)
+        {
+            if(to_rub.IsChecked == true)
+            {
+                MessageBox.Show(Convert.ToString(Convert.ToInt32(how_box.Text) * Convert.ToInt32(money_box.Text)));
+            }
+            else if(to_shav.IsChecked == true)
+            {
+
+            }
+        }
     }
 }

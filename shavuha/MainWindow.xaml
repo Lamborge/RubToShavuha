@@ -8,7 +8,9 @@
         ResizeMode="NoResize"
         Title="Конвертер" Height="300" Width="400">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,20,0,0" Text="Что делаем: " TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Candara" FontSize="16"/>
+        <RadioButton Content="В рубли" HorizontalAlignment="Left" Margin="121,23,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="В шавухи" HorizontalAlignment="Left" Margin="188,23,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
